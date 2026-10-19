@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Header & Navbar */
+.navbar {
+  border-bottom: 1px solid #ccc;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1,
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-links a.active {
+  font-weight: bold;
+  color: #080909;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Nút bấm cơ bản */
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #999;
+  background: #f0f0f0;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+.btn-primary {
+  background: #0066cc;
+  border-color: #0066cc;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+/* Khung Home */
+.home-box {
+  border: 1px solid #ccc;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.home-box h2 {
+  margin-bottom: 15px;
+}
+
+.home-box p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Bộ lọc & Tìm kiếm */
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0 10px 0;
+  flex-wrap: wrap;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-form input {
+  flex: 1;
+}
+
+/* Hàng thông tin tổng sản phẩm + số trang + các nút phân trang */
+.toolbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  padding: 4px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.toolbar-info {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Phân trang */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.pagination button.active {
+  background: #0f1010;
+  color: #fff;
+  border-color: #030303;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Bảng sản phẩm */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background: #f7f7f7;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+/* Trang chi tiết sản phẩm */
+.detail-box {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.image-box {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.product-detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-placeholder {
+  width: 250px;
+  height: 200px;
+  border: 1px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  color: #777;
+  font-size: 14px;
+}
+
+.detail-content {
+  flex: 1;
+}
+
+.detail-content h3 {
+  margin-bottom: 12px;
+}
+
+.detail-content p {
+  margin-bottom: 8px;
+}
+
+/* Trang 404 */
+.not-found {
+  border: 1px solid #ccc;
+  padding: 40px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.not-found h2 {
+  margin-bottom: 10px;
+  color: #0a0a0a;
+}
+
+.not-found p {
+  margin-bottom: 20px;
+  color: #666;
+}
